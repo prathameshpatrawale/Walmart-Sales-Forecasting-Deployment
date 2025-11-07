@@ -1,0 +1,21 @@
+# Ignore venv
+walmart/
+venv/
+.env/
+
+# Ignore system/cache
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Ignore large logs or raw model dumps
+*.pkl
+*.joblib
+*.cbm
+
+# Allow lightweight models you want to deploy
+!models/rf_model_light.pkl
+!models/le.pkl
+
+# Allow data under 50MB
+!Data/*.csv
